@@ -1,0 +1,1243 @@
+NOTE: PROCEDURE PRINTTO used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: .UBER_COUNTRY was successfully created.
+NOTE: PROCEDURE IMPORT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+&=year_name
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+Total Countries = 18
+Australia
+
+NOTE: There were 4 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='Australia';
+NOTE: The data set WORK.UBER_DEC08_AUSTRALIA has 4 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+1335   /**********************************************************************
+1336   *   PRODUCT:   SAS
+1337   *   VERSION:   9.1
+1338   *   CREATOR:   External File Interface
+1339   *   DATE:      09JAN09
+1340   *   DESC:      Generated SAS Datastep Code
+1341   *   TEMPLATE SOURCE:  (None Specified.)
+1342   ***********************************************************************/
+1343      data _null_;
+1344      set  UBER_DEC08_AUSTRALIA                         end=EFIEOD;
+1345      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1346      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1347      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Australia.csv' delimiter=',' DSD DROPOVER lrecl=32767
+1347! ;
+1348         format COUNTRY $12. ;
+1349         format CITY $14. ;
+1350      if _n_ = 1 then        /* write column names */
+1351       do;
+1352         put
+1353         'COUNTRY'
+1354         ','
+1355         'CITY'
+1356         ;
+1357       end;
+1358       do;
+1359         EFIOUT + 1;
+1360         put COUNTRY $ @;
+1361         put CITY $ ;
+1362         ;
+1363       end;
+1364      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1365      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1366      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Australia.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Australia.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 5 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Australia.csv'.
+      The minimum record length was 12.
+      The maximum record length was 19.
+NOTE: There were 4 observations read from the data set WORK.UBER_DEC08_AUSTRALIA.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+4 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Australia.csv from UBER_DEC08_AUSTRALIA         
+            .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Australia.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.14 seconds
+      cpu time            0.12 seconds
+      
+
+Brazil
+
+NOTE: There were 4 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='Brazil';
+NOTE: The data set WORK.UBER_DEC08_BRAZIL has 4 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+1367   /**********************************************************************
+1368   *   PRODUCT:   SAS
+1369   *   VERSION:   9.1
+1370   *   CREATOR:   External File Interface
+1371   *   DATE:      09JAN09
+1372   *   DESC:      Generated SAS Datastep Code
+1373   *   TEMPLATE SOURCE:  (None Specified.)
+1374   ***********************************************************************/
+1375      data _null_;
+1376      set  UBER_DEC08_BRAZIL                            end=EFIEOD;
+1377      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1378      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1379      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Brazil.csv' delimiter=',' DSD DROPOVER lrecl=32767;
+1380         format COUNTRY $12. ;
+1381         format CITY $14. ;
+1382      if _n_ = 1 then        /* write column names */
+1383       do;
+1384         put
+1385         'COUNTRY'
+1386         ','
+1387         'CITY'
+1388         ;
+1389       end;
+1390       do;
+1391         EFIOUT + 1;
+1392         put COUNTRY $ @;
+1393         put CITY $ ;
+1394         ;
+1395       end;
+1396      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1397      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1398      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Brazil.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Brazil.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 5 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Brazil.csv'.
+      The minimum record length was 12.
+      The maximum record length was 21.
+NOTE: There were 4 observations read from the data set WORK.UBER_DEC08_BRAZIL.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+4 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Brazil.csv from UBER_DEC08_BRAZIL               
+         .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Brazil.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.14 seconds
+      cpu time            0.12 seconds
+      
+
+Canada
+
+NOTE: There were 4 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='Canada';
+NOTE: The data set WORK.UBER_DEC08_CANADA has 4 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+1399   /**********************************************************************
+1400   *   PRODUCT:   SAS
+1401   *   VERSION:   9.1
+1402   *   CREATOR:   External File Interface
+1403   *   DATE:      09JAN09
+1404   *   DESC:      Generated SAS Datastep Code
+1405   *   TEMPLATE SOURCE:  (None Specified.)
+1406   ***********************************************************************/
+1407      data _null_;
+1408      set  UBER_DEC08_CANADA                            end=EFIEOD;
+1409      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1410      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1411      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Canada.csv' delimiter=',' DSD DROPOVER lrecl=32767;
+1412         format COUNTRY $12. ;
+1413         format CITY $14. ;
+1414      if _n_ = 1 then        /* write column names */
+1415       do;
+1416         put
+1417         'COUNTRY'
+1418         ','
+1419         'CITY'
+1420         ;
+1421       end;
+1422       do;
+1423         EFIOUT + 1;
+1424         put COUNTRY $ @;
+1425         put CITY $ ;
+1426         ;
+1427       end;
+1428      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1429      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1430      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Canada.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Canada.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 5 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Canada.csv'.
+      The minimum record length was 12.
+      The maximum record length was 16.
+NOTE: There were 4 observations read from the data set WORK.UBER_DEC08_CANADA.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+4 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Canada.csv from UBER_DEC08_CANADA               
+         .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Canada.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.15 seconds
+      cpu time            0.15 seconds
+      
+
+France
+
+NOTE: There were 4 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='France';
+NOTE: The data set WORK.UBER_DEC08_FRANCE has 4 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+1431   /**********************************************************************
+1432   *   PRODUCT:   SAS
+1433   *   VERSION:   9.1
+1434   *   CREATOR:   External File Interface
+1435   *   DATE:      09JAN09
+1436   *   DESC:      Generated SAS Datastep Code
+1437   *   TEMPLATE SOURCE:  (None Specified.)
+1438   ***********************************************************************/
+1439      data _null_;
+1440      set  UBER_DEC08_FRANCE                            end=EFIEOD;
+1441      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1442      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1443      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_France.csv' delimiter=',' DSD DROPOVER lrecl=32767;
+1444         format COUNTRY $12. ;
+1445         format CITY $14. ;
+1446      if _n_ = 1 then        /* write column names */
+1447       do;
+1448         put
+1449         'COUNTRY'
+1450         ','
+1451         'CITY'
+1452         ;
+1453       end;
+1454       do;
+1455         EFIOUT + 1;
+1456         put COUNTRY $ @;
+1457         put CITY $ ;
+1458         ;
+1459       end;
+1460      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1461      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1462      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_France.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_France.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 5 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_France.csv'.
+      The minimum record length was 11.
+      The maximum record length was 12.
+NOTE: There were 4 observations read from the data set WORK.UBER_DEC08_FRANCE.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+4 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_France.csv from UBER_DEC08_FRANCE               
+         .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_France.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.15 seconds
+      cpu time            0.15 seconds
+      
+
+Germany
+
+NOTE: There were 4 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='Germany';
+NOTE: The data set WORK.UBER_DEC08_GERMANY has 4 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+1463   /**********************************************************************
+1464   *   PRODUCT:   SAS
+1465   *   VERSION:   9.1
+1466   *   CREATOR:   External File Interface
+1467   *   DATE:      09JAN09
+1468   *   DESC:      Generated SAS Datastep Code
+1469   *   TEMPLATE SOURCE:  (None Specified.)
+1470   ***********************************************************************/
+1471      data _null_;
+1472      set  UBER_DEC08_GERMANY                           end=EFIEOD;
+1473      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1474      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1475      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Germany.csv' delimiter=',' DSD DROPOVER lrecl=32767;
+1476         format COUNTRY $12. ;
+1477         format CITY $14. ;
+1478      if _n_ = 1 then        /* write column names */
+1479       do;
+1480         put
+1481         'COUNTRY'
+1482         ','
+1483         'CITY'
+1484         ;
+1485       end;
+1486       do;
+1487         EFIOUT + 1;
+1488         put COUNTRY $ @;
+1489         put CITY $ ;
+1490         ;
+1491       end;
+1492      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1493      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1494      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Germany.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Germany.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 5 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Germany.csv'.
+      The minimum record length was 12.
+      The maximum record length was 14.
+NOTE: There were 4 observations read from the data set WORK.UBER_DEC08_GERMANY.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+4 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Germany.csv from UBER_DEC08_GERMANY             
+          .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Germany.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.15 seconds
+      cpu time            0.11 seconds
+      
+
+India
+
+NOTE: There were 4 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='India';
+NOTE: The data set WORK.UBER_DEC08_INDIA has 4 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+1495   /**********************************************************************
+1496   *   PRODUCT:   SAS
+1497   *   VERSION:   9.1
+1498   *   CREATOR:   External File Interface
+1499   *   DATE:      09JAN09
+1500   *   DESC:      Generated SAS Datastep Code
+1501   *   TEMPLATE SOURCE:  (None Specified.)
+1502   ***********************************************************************/
+1503      data _null_;
+1504      set  UBER_DEC08_INDIA                             end=EFIEOD;
+1505      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1506      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1507      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_India.csv' delimiter=',' DSD DROPOVER lrecl=32767;
+1508         format COUNTRY $12. ;
+1509         format CITY $14. ;
+1510      if _n_ = 1 then        /* write column names */
+1511       do;
+1512         put
+1513         'COUNTRY'
+1514         ','
+1515         'CITY'
+1516         ;
+1517       end;
+1518       do;
+1519         EFIOUT + 1;
+1520         put COUNTRY $ @;
+1521         put CITY $ ;
+1522         ;
+1523       end;
+1524      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1525      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1526      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_India.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_India.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 5 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_India.csv'.
+      The minimum record length was 12.
+      The maximum record length was 15.
+NOTE: There were 4 observations read from the data set WORK.UBER_DEC08_INDIA.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+4 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_India.csv from UBER_DEC08_INDIA                 
+        .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_India.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.13 seconds
+      cpu time            0.14 seconds
+      
+
+Indonesia
+
+NOTE: There were 2 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='Indonesia';
+NOTE: The data set WORK.UBER_DEC08_INDONESIA has 2 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+1527   /**********************************************************************
+1528   *   PRODUCT:   SAS
+1529   *   VERSION:   9.1
+1530   *   CREATOR:   External File Interface
+1531   *   DATE:      09JAN09
+1532   *   DESC:      Generated SAS Datastep Code
+1533   *   TEMPLATE SOURCE:  (None Specified.)
+1534   ***********************************************************************/
+1535      data _null_;
+1536      set  UBER_DEC08_INDONESIA                         end=EFIEOD;
+1537      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1538      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1539      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Indonesia.csv' delimiter=',' DSD DROPOVER lrecl=32767
+1539! ;
+1540         format COUNTRY $12. ;
+1541         format CITY $14. ;
+1542      if _n_ = 1 then        /* write column names */
+1543       do;
+1544         put
+1545         'COUNTRY'
+1546         ','
+1547         'CITY'
+1548         ;
+1549       end;
+1550       do;
+1551         EFIOUT + 1;
+1552         put COUNTRY $ @;
+1553         put CITY $ ;
+1554         ;
+1555       end;
+1556      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1557      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1558      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Indonesia.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Indonesia.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 3 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Indonesia.csv'.
+      The minimum record length was 12.
+      The maximum record length was 17.
+NOTE: There were 2 observations read from the data set WORK.UBER_DEC08_INDONESIA.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+2 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Indonesia.csv from UBER_DEC08_INDONESIA         
+            .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Indonesia.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.15 seconds
+      cpu time            0.15 seconds
+      
+
+Italy
+
+NOTE: There were 4 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='Italy';
+NOTE: The data set WORK.UBER_DEC08_ITALY has 4 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+1559   /**********************************************************************
+1560   *   PRODUCT:   SAS
+1561   *   VERSION:   9.1
+1562   *   CREATOR:   External File Interface
+1563   *   DATE:      09JAN09
+1564   *   DESC:      Generated SAS Datastep Code
+1565   *   TEMPLATE SOURCE:  (None Specified.)
+1566   ***********************************************************************/
+1567      data _null_;
+1568      set  UBER_DEC08_ITALY                             end=EFIEOD;
+1569      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1570      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1571      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Italy.csv' delimiter=',' DSD DROPOVER lrecl=32767;
+1572         format COUNTRY $12. ;
+1573         format CITY $14. ;
+1574      if _n_ = 1 then        /* write column names */
+1575       do;
+1576         put
+1577         'COUNTRY'
+1578         ','
+1579         'CITY'
+1580         ;
+1581       end;
+1582       do;
+1583         EFIOUT + 1;
+1584         put COUNTRY $ @;
+1585         put CITY $ ;
+1586         ;
+1587       end;
+1588      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1589      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1590      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Italy.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Italy.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 5 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Italy.csv'.
+      The minimum record length was 10.
+      The maximum record length was 12.
+NOTE: There were 4 observations read from the data set WORK.UBER_DEC08_ITALY.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+4 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Italy.csv from UBER_DEC08_ITALY                 
+        .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Italy.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.17 seconds
+      cpu time            0.15 seconds
+      
+
+Japan
+
+NOTE: There were 4 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='Japan';
+NOTE: The data set WORK.UBER_DEC08_JAPAN has 4 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+1591   /**********************************************************************
+1592   *   PRODUCT:   SAS
+1593   *   VERSION:   9.1
+1594   *   CREATOR:   External File Interface
+1595   *   DATE:      09JAN09
+1596   *   DESC:      Generated SAS Datastep Code
+1597   *   TEMPLATE SOURCE:  (None Specified.)
+1598   ***********************************************************************/
+1599      data _null_;
+1600      set  UBER_DEC08_JAPAN                             end=EFIEOD;
+1601      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1602      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1603      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Japan.csv' delimiter=',' DSD DROPOVER lrecl=32767;
+1604         format COUNTRY $12. ;
+1605         format CITY $14. ;
+1606      if _n_ = 1 then        /* write column names */
+1607       do;
+1608         put
+1609         'COUNTRY'
+1610         ','
+1611         'CITY'
+1612         ;
+1613       end;
+1614       do;
+1615         EFIOUT + 1;
+1616         put COUNTRY $ @;
+1617         put CITY $ ;
+1618         ;
+1619       end;
+1620      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1621      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1622      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Japan.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Japan.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 5 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Japan.csv'.
+      The minimum record length was 11.
+      The maximum record length was 12.
+NOTE: There were 4 observations read from the data set WORK.UBER_DEC08_JAPAN.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+4 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Japan.csv from UBER_DEC08_JAPAN                 
+        .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Japan.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.15 seconds
+      cpu time            0.15 seconds
+      
+
+Mexico
+
+NOTE: There were 4 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='Mexico';
+NOTE: The data set WORK.UBER_DEC08_MEXICO has 4 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+
+1623   /**********************************************************************
+1624   *   PRODUCT:   SAS
+1625   *   VERSION:   9.1
+1626   *   CREATOR:   External File Interface
+1627   *   DATE:      09JAN09
+1628   *   DESC:      Generated SAS Datastep Code
+1629   *   TEMPLATE SOURCE:  (None Specified.)
+1630   ***********************************************************************/
+1631      data _null_;
+1632      set  UBER_DEC08_MEXICO                            end=EFIEOD;
+1633      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1634      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1635      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Mexico.csv' delimiter=',' DSD DROPOVER lrecl=32767;
+1636         format COUNTRY $12. ;
+1637         format CITY $14. ;
+1638      if _n_ = 1 then        /* write column names */
+1639       do;
+1640         put
+1641         'COUNTRY'
+1642         ','
+1643         'CITY'
+1644         ;
+1645       end;
+1646       do;
+1647         EFIOUT + 1;
+1648         put COUNTRY $ @;
+1649         put CITY $ ;
+1650         ;
+1651       end;
+1652      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1653      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1654      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Mexico.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Mexico.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 5 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Mexico.csv'.
+      The minimum record length was 12.
+      The maximum record length was 18.
+NOTE: There were 4 observations read from the data set WORK.UBER_DEC08_MEXICO.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+4 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Mexico.csv from UBER_DEC08_MEXICO               
+         .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Mexico.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.15 seconds
+      cpu time            0.14 seconds
+      
+
+Netherlands
+
+NOTE: There were 2 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='Netherlands';
+NOTE: The data set WORK.UBER_DEC08_NETHERLANDS has 2 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+1655   /**********************************************************************
+1656   *   PRODUCT:   SAS
+1657   *   VERSION:   9.1
+1658   *   CREATOR:   External File Interface
+1659   *   DATE:      09JAN09
+1660   *   DESC:      Generated SAS Datastep Code
+1661   *   TEMPLATE SOURCE:  (None Specified.)
+1662   ***********************************************************************/
+1663      data _null_;
+1664      set  UBER_DEC08_NETHERLANDS                       end=EFIEOD;
+1665      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1666      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1667      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Netherlands.csv' delimiter=',' DSD DROPOVER
+1667! lrecl=32767;
+1668         format COUNTRY $12. ;
+1669         format CITY $14. ;
+1670      if _n_ = 1 then        /* write column names */
+1671       do;
+1672         put
+1673         'COUNTRY'
+1674         ','
+1675         'CITY'
+1676         ;
+1677       end;
+1678       do;
+1679         EFIOUT + 1;
+1680         put COUNTRY $ @;
+1681         put CITY $ ;
+1682         ;
+1683       end;
+1684      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1685      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1686      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Netherlands.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Netherlands.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 3 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Netherlands.csv'.
+      The minimum record length was 12.
+      The maximum record length was 21.
+NOTE: There were 2 observations read from the data set WORK.UBER_DEC08_NETHERLANDS.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+2 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Netherlands.csv from UBER_DEC08_NETHERLANDS     
+              .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Netherlands.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.14 seconds
+      cpu time            0.12 seconds
+      
+
+Philippines
+
+NOTE: There were 2 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='Philippines';
+NOTE: The data set WORK.UBER_DEC08_PHILIPPINES has 2 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+1687   /**********************************************************************
+1688   *   PRODUCT:   SAS
+1689   *   VERSION:   9.1
+1690   *   CREATOR:   External File Interface
+1691   *   DATE:      09JAN09
+1692   *   DESC:      Generated SAS Datastep Code
+1693   *   TEMPLATE SOURCE:  (None Specified.)
+1694   ***********************************************************************/
+1695      data _null_;
+1696      set  UBER_DEC08_PHILIPPINES                       end=EFIEOD;
+1697      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1698      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1699      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Philippines.csv' delimiter=',' DSD DROPOVER
+1699! lrecl=32767;
+1700         format COUNTRY $12. ;
+1701         format CITY $14. ;
+1702      if _n_ = 1 then        /* write column names */
+1703       do;
+1704         put
+1705         'COUNTRY'
+1706         ','
+1707         'CITY'
+1708         ;
+1709       end;
+1710       do;
+1711         EFIOUT + 1;
+1712         put COUNTRY $ @;
+1713         put CITY $ ;
+1714         ;
+1715       end;
+1716      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1717      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1718      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Philippines.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Philippines.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 3 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Philippines.csv'.
+      The minimum record length was 12.
+      The maximum record length was 18.
+NOTE: There were 2 observations read from the data set WORK.UBER_DEC08_PHILIPPINES.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+2 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Philippines.csv from UBER_DEC08_PHILIPPINES     
+              .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Philippines.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.15 seconds
+      cpu time            0.12 seconds
+      
+
+Singapore
+
+NOTE: There were 2 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='Singapore';
+NOTE: The data set WORK.UBER_DEC08_SINGAPORE has 2 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+1719   /**********************************************************************
+1720   *   PRODUCT:   SAS
+1721   *   VERSION:   9.1
+1722   *   CREATOR:   External File Interface
+1723   *   DATE:      09JAN09
+1724   *   DESC:      Generated SAS Datastep Code
+1725   *   TEMPLATE SOURCE:  (None Specified.)
+1726   ***********************************************************************/
+1727      data _null_;
+1728      set  UBER_DEC08_SINGAPORE                         end=EFIEOD;
+1729      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1730      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1731      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Singapore.csv' delimiter=',' DSD DROPOVER lrecl=32767
+1731! ;
+1732         format COUNTRY $12. ;
+1733         format CITY $14. ;
+1734      if _n_ = 1 then        /* write column names */
+1735       do;
+1736         put
+1737         'COUNTRY'
+1738         ','
+1739         'CITY'
+1740         ;
+1741       end;
+1742       do;
+1743         EFIOUT + 1;
+1744         put COUNTRY $ @;
+1745         put CITY $ ;
+1746         ;
+1747       end;
+1748      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1749      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1750      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Singapore.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Singapore.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 3 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Singapore.csv'.
+      The minimum record length was 12.
+      The maximum record length was 19.
+NOTE: There were 2 observations read from the data set WORK.UBER_DEC08_SINGAPORE.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+2 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Singapore.csv from UBER_DEC08_SINGAPORE         
+            .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Singapore.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.14 seconds
+      cpu time            0.14 seconds
+      
+
+SouthAfrica
+
+NOTE: There were 2 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='South Africa';
+NOTE: The data set WORK.UBER_DEC08_SOUTHAFRICA has 2 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+
+1751   /**********************************************************************
+1752   *   PRODUCT:   SAS
+1753   *   VERSION:   9.1
+1754   *   CREATOR:   External File Interface
+1755   *   DATE:      09JAN09
+1756   *   DESC:      Generated SAS Datastep Code
+1757   *   TEMPLATE SOURCE:  (None Specified.)
+1758   ***********************************************************************/
+1759      data _null_;
+1760      set  UBER_DEC08_SOUTHAFRICA                       end=EFIEOD;
+1761      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1762      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1763      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_SouthAfrica.csv' delimiter=',' DSD DROPOVER
+1763! lrecl=32767;
+1764         format COUNTRY $12. ;
+1765         format CITY $14. ;
+1766      if _n_ = 1 then        /* write column names */
+1767       do;
+1768         put
+1769         'COUNTRY'
+1770         ','
+1771         'CITY'
+1772         ;
+1773       end;
+1774       do;
+1775         EFIOUT + 1;
+1776         put COUNTRY $ @;
+1777         put CITY $ ;
+1778         ;
+1779       end;
+1780      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1781      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1782      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_SouthAfrica.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_SouthAfrica.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 3 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_SouthAfrica.csv'.
+      The minimum record length was 12.
+      The maximum record length was 25.
+NOTE: There were 2 observations read from the data set WORK.UBER_DEC08_SOUTHAFRICA.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+2 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_SouthAfrica.csv from UBER_DEC08_SOUTHAFRICA     
+              .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_SouthAfrica.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.15 seconds
+      cpu time            0.14 seconds
+      
+
+Spain
+
+NOTE: There were 4 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='Spain';
+NOTE: The data set WORK.UBER_DEC08_SPAIN has 4 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+1783   /**********************************************************************
+1784   *   PRODUCT:   SAS
+1785   *   VERSION:   9.1
+1786   *   CREATOR:   External File Interface
+1787   *   DATE:      09JAN09
+1788   *   DESC:      Generated SAS Datastep Code
+1789   *   TEMPLATE SOURCE:  (None Specified.)
+1790   ***********************************************************************/
+1791      data _null_;
+1792      set  UBER_DEC08_SPAIN                             end=EFIEOD;
+1793      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1794      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1795      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Spain.csv' delimiter=',' DSD DROPOVER lrecl=32767;
+1796         format COUNTRY $12. ;
+1797         format CITY $14. ;
+1798      if _n_ = 1 then        /* write column names */
+1799       do;
+1800         put
+1801         'COUNTRY'
+1802         ','
+1803         'CITY'
+1804         ;
+1805       end;
+1806       do;
+1807         EFIOUT + 1;
+1808         put COUNTRY $ @;
+1809         put CITY $ ;
+1810         ;
+1811       end;
+1812      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1813      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1814      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Spain.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Spain.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 5 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Spain.csv'.
+      The minimum record length was 12.
+      The maximum record length was 15.
+NOTE: There were 4 observations read from the data set WORK.UBER_DEC08_SPAIN.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+4 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Spain.csv from UBER_DEC08_SPAIN                 
+        .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_Spain.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.13 seconds
+      cpu time            0.14 seconds
+      
+
+UAE
+
+NOTE: There were 2 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='UAE';
+NOTE: The data set WORK.UBER_DEC08_UAE has 2 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+
+1815   /**********************************************************************
+1816   *   PRODUCT:   SAS
+1817   *   VERSION:   9.1
+1818   *   CREATOR:   External File Interface
+1819   *   DATE:      09JAN09
+1820   *   DESC:      Generated SAS Datastep Code
+1821   *   TEMPLATE SOURCE:  (None Specified.)
+1822   ***********************************************************************/
+1823      data _null_;
+1824      set  UBER_DEC08_UAE                               end=EFIEOD;
+1825      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1826      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1827      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_UAE.csv' delimiter=',' DSD DROPOVER lrecl=32767;
+1828         format COUNTRY $12. ;
+1829         format CITY $14. ;
+1830      if _n_ = 1 then        /* write column names */
+1831       do;
+1832         put
+1833         'COUNTRY'
+1834         ','
+1835         'CITY'
+1836         ;
+1837       end;
+1838       do;
+1839         EFIOUT + 1;
+1840         put COUNTRY $ @;
+1841         put CITY $ ;
+1842         ;
+1843       end;
+1844      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1845      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1846      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_UAE.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_UAE.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 3 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_UAE.csv'.
+      The minimum record length was 9.
+      The maximum record length was 12.
+NOTE: There were 2 observations read from the data set WORK.UBER_DEC08_UAE.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+2 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_UAE.csv from UBER_DEC08_UAE                     
+      .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_UAE.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.17 seconds
+      cpu time            0.14 seconds
+      
+
+UK
+
+NOTE: There were 4 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='UK';
+NOTE: The data set WORK.UBER_DEC08_UK has 4 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+1847   /**********************************************************************
+1848   *   PRODUCT:   SAS
+1849   *   VERSION:   9.1
+1850   *   CREATOR:   External File Interface
+1851   *   DATE:      09JAN09
+1852   *   DESC:      Generated SAS Datastep Code
+1853   *   TEMPLATE SOURCE:  (None Specified.)
+1854   ***********************************************************************/
+1855      data _null_;
+1856      set  UBER_DEC08_UK                                end=EFIEOD;
+1857      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1858      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1859      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_UK.csv' delimiter=',' DSD DROPOVER lrecl=32767;
+1860         format COUNTRY $12. ;
+1861         format CITY $14. ;
+1862      if _n_ = 1 then        /* write column names */
+1863       do;
+1864         put
+1865         'COUNTRY'
+1866         ','
+1867         'CITY'
+1868         ;
+1869       end;
+1870       do;
+1871         EFIOUT + 1;
+1872         put COUNTRY $ @;
+1873         put CITY $ ;
+1874         ;
+1875       end;
+1876      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1877      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1878      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_UK.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_UK.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 5 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_UK.csv'.
+      The minimum record length was 9.
+      The maximum record length was 13.
+NOTE: There were 4 observations read from the data set WORK.UBER_DEC08_UK.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+4 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_UK.csv from UBER_DEC08_UK                       
+     .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_UK.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.12 seconds
+      cpu time            0.12 seconds
+      
+
+USA
+
+NOTE: There were 4 observations read from the data set WORK.UBER_COUNTRY.
+      WHERE country='USA';
+NOTE: The data set WORK.UBER_DEC08_USA has 4 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+1879   /**********************************************************************
+1880   *   PRODUCT:   SAS
+1881   *   VERSION:   9.1
+1882   *   CREATOR:   External File Interface
+1883   *   DATE:      09JAN09
+1884   *   DESC:      Generated SAS Datastep Code
+1885   *   TEMPLATE SOURCE:  (None Specified.)
+1886   ***********************************************************************/
+1887      data _null_;
+1888      set  UBER_DEC08_USA                               end=EFIEOD;
+1889      %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+1890      %let _EFIREC_ = 0;     /* clear export record count macro variable */
+1891      file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_USA.csv' delimiter=',' DSD DROPOVER lrecl=32767;
+1892         format COUNTRY $12. ;
+1893         format CITY $14. ;
+1894      if _n_ = 1 then        /* write column names */
+1895       do;
+1896         put
+1897         'COUNTRY'
+1898         ','
+1899         'CITY'
+1900         ;
+1901       end;
+1902       do;
+1903         EFIOUT + 1;
+1904         put COUNTRY $ @;
+1905         put CITY $ ;
+1906         ;
+1907       end;
+1908      if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+1909      if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+1910      run;
+
+NOTE: The file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_USA.csv' is:
+      File Name=C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_USA.csv,
+      RECFM=V,LRECL=32767
+
+NOTE: 5 records were written to the file 'C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_USA.csv'.
+      The minimum record length was 12.
+      The maximum record length was 17.
+NOTE: There were 4 observations read from the data set WORK.UBER_DEC08_USA.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+4 records created in C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_USA.csv from UBER_DEC08_USA                     
+      .
+  
+  
+NOTE: "C:\Documents and Settings\Administrator\Desktop\1st_project\uber_DEC08_USA.csv" was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.13 seconds
+      cpu time            0.14 seconds
+      
+
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+NOTE: The SAS System used:
+      real time           46:18.40
+      cpu time            33.12 seconds
+      
